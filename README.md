@@ -27,8 +27,8 @@ Langages I don't know and want to try :
 - [ ] Perl
 
 
-| Plugin | README                          |
-|--------|---------------------------------|
-| Day 1  | [Calorie Counting](./01) |
-| Day 2  | [Rock Paper Scissors](./02) |
-| Day 3  | [Rucksack Reorganization](./03) |
+| Day  | Title                           | Langage |
+|------|---------------------------------|---------|
+| 1    | [Calorie Counting](./01)        | Python  |
+| 2    | [Rock Paper Scissors](./02)     | Python  |
+| 3    | [Rucksack Reorganization](./03) |   |
