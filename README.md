@@ -1,2 +1,2 @@
-# advent_of_code
+# adventofcode
 a repo with the solutions of the adventofcode.com 
