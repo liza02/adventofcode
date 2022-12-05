@@ -10,7 +10,7 @@ Langages I already know (in descending order of mastery):
 - [ ] Java
 - [X] Python
 - [ ] Javascript
-- [ ] Scala
+- [X] Scala
 - [ ] PHP
 - [ ] bash
 - [ ] C
@@ -31,4 +31,4 @@ Langages I don't know and want to try :
 |------|---------------------------------|---------|
 | 1    | [Calorie Counting](./01)        | Python  |
 | 2    | [Rock Paper Scissors](./02)     | Python  |
-| 3    | [Rucksack Reorganization](./03) |   |
+| 3    | [Rucksack Reorganization](./03) | Scala   |
