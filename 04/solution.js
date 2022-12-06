@@ -1,22 +1,22 @@
 const fs = require('fs');
 
 function contains(container, content) {
-    var container_inf = parseInt(container.split("-")[0])
-    var container_sup = parseInt(container.split("-")[1])
-    var content_inf = parseInt(content.split("-")[0])
-    var content_sup = parseInt(content.split("-")[1])
-    return container_inf <= content_inf && container_sup >= content_sup
+    var containerInf = parseInt(container.split("-")[0])
+    var containerSup = parseInt(container.split("-")[1])
+    var contentInf = parseInt(content.split("-")[0])
+    var contentSup = parseInt(content.split("-")[1])
+    return containerInf <= contentInf && containerSup >= contentSup
 }
 
 function overlaps(sectX, sectY) {
-    var sectX_inf = parseInt(sectX.split("-")[0])
-    var sectX_sup = parseInt(sectX.split("-")[1])
-    var sectY_inf = parseInt(sectY.split("-")[0])
-    var sectY_sup = parseInt(sectY.split("-")[1])
-    return (sectY_inf <= sectX_sup && sectX_sup <= sectY_sup) || (sectY_inf <= sectX_inf && sectX_inf <= sectY_sup)
+    var sectXInf = parseInt(sectX.split("-")[0])
+    var sectXSup = parseInt(sectX.split("-")[1])
+    var sectYInf = parseInt(sectY.split("-")[0])
+    var sectYSup = parseInt(sectY.split("-")[1])
+    return (sectYInf <= sectXSup && sectXSup <= sectYSup) || (sectYInf <= sectXInf && sectXInf <= sectYSup)
 }
 
-function test_relation_in_pair(pair, callback) {
+function testRelationInPair(pair, callback) {
     pair = pair.split(",")
     return callback(pair[0], pair[1]) || callback(pair[1], pair[0])
 }
@@ -27,8 +27,8 @@ fs.readFile('04/input.txt', 'utf8', (err, pairs) => {
         return;
     }
     pairs = pairs.split("\n").filter(element => element)
-    pairs_where_one_range_fully_contains_other = pairs.filter( (pair) => test_relation_in_pair(pair, contains))
-    console.log("assignment pairs where one range fully contains the other : " + pairs_where_one_range_fully_contains_other.length)
-    pairs_overlapsing = pairs.filter((pair) => test_relation_in_pair(pair, overlaps) || test_relation_in_pair(pair, contains))
-    console.log("assignment pairs that overlaps the ranges : " + pairs_overlapsing.length)
+    pairsWhereOneRangeFullyContainsOther = pairs.filter( (pair) => testRelationInPair(pair, contains))
+    console.log("assignment pairs where one range fully contains the other : " + pairsWhereOneRangeFullyContainsOther.length)
+    pairsOverlapsing = pairs.filter((pair) => testRelationInPair(pair, overlaps) || testRelationInPair(pair, contains))
+    console.log("assignment pairs that overlaps the ranges : " + pairsOverlapsing.length)
 });
