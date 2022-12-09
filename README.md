@@ -17,7 +17,7 @@ Langages I already know (in descending order of mastery):
 
 Langages I don't know and want to try :
 - [ ] Rust
-- [ ] Ruby
+- [X] Ruby
 - [ ] Go
 - [ ] Groovy
 - [ ] C#
@@ -34,6 +34,6 @@ Langages I don't know and want to try :
 | 3   | [Rucksack Reorganization](./03) | Scala                |
 | 4   | [Camp Cleanup](./04)            | Javascript / Node.JS |
 | 5   | [Supply Stacks](./05)           | Java                 |
-| 6   | [Tuning Trouble](./06)          |                      |
+| 6   | [Tuning Trouble](./06)          | Ruby                 |
 | 7   | [No Space Left On Device](./07) |                      |
 | 8   | [Treetop Tree House](./08)      |                      |
