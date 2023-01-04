@@ -35,5 +35,6 @@ Langages I don't know and want to try :
 | 4   | [Camp Cleanup](./04)            | Javascript / Node.JS |
 | 5   | [Supply Stacks](./05)           | Java                 |
 | 6   | [Tuning Trouble](./06)          | Ruby                 |
-| 7   | [No Space Left On Device](./07) |                      |
-| 8   | [Treetop Tree House](./08)      |                      |
+| 7   | [No Space Left On Device](./07) | Python               |
+| 8   | [Treetop Tree House](./08)      | Java                 |
+| 9   | [Rope Bridge](./09)             |                      |    
