@@ -19,7 +19,7 @@ Langages I don't know and want to try :
 - [ ] Rust
 - [X] Ruby
 - [ ] Go
-- [ ] Groovy
+- [X] Groovy
 - [ ] C#
 - [ ] C++
 - [ ] Lua
@@ -37,4 +37,4 @@ Langages I don't know and want to try :
 | 6   | [Tuning Trouble](./06)          | Ruby                 |
 | 7   | [No Space Left On Device](./07) | Python               |
 | 8   | [Treetop Tree House](./08)      | Java                 |
-| 9   | [Rope Bridge](./09)             |                      |    
+| 9   | [Rope Bridge](./09)             | Groovy               |    

@@ -119,3 +119,6 @@ fabric.properties
 *.iml
 /*.iml
 /**/*.iml
+
+# Groovy
+lib

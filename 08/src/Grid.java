@@ -37,11 +37,11 @@ public class Grid {
         return Stream.of(left, right, up, down);
     }
 
-    public List<Tree> getLineBetween(int y, int x1, int x2) {
+    private List<Tree> getLineBetween(int y, int x1, int x2) {
         return this.trees.get(y).subList(x1, x2);
     }
 
-    public List<Tree> getColumnBetween(int x, int y1, int y2) {
+    private List<Tree> getColumnBetween(int x, int y1, int y2) {
         return this.trees.stream().map(line -> line.get(x)).toList().subList(y1, y2);
     }
 
