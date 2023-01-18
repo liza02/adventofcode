@@ -6,12 +6,12 @@ enum Movement {
     RIGHT('R',1,0);
 
     final String direction
-    final int xIncrement, yIncrement
+    final int xOffset, yOffset
 
-    private Movement(String direction, int xIncrement, int yIncrement) {
+    private Movement(String direction, int xOffset, int yOffset) {
         this.direction = direction
-        this.xIncrement = xIncrement
-        this.yIncrement = yIncrement
+        this.xOffset = xOffset
+        this.yOffset = yOffset
     }
 
     static of(String direction) {

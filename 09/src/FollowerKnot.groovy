@@ -1,17 +1,15 @@
-class TailKnot extends Knot {
+class FollowerKnot extends Knot {
 
     Set<Tuple2<Integer, Integer>> positions
 
-    TailKnot() {
+    FollowerKnot() {
         super()
         this.positions = new HashSet()
         memorizePosition()
     }
 
-    def follow(Tuple2<Integer, Integer> headPrecedentPosition) {
-        x = headPrecedentPosition.getV1()
-        y = headPrecedentPosition.getV2()
-        memorizePosition()
+    def follow(Knot knot) {
+        move(Math.signum(knot.x - x) as int, Math.signum(knot.y - y) as int)
     }
 
     def isAdjacentOrCovered(Knot head) {
